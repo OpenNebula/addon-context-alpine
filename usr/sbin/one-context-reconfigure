@@ -1,0 +1,17 @@
+#!/bin/sh
+
+# Set PATH
+PATH=/sbin:/bin:/usr/sbin:/usr/bin
+
+(
+
+echo "Waiting one minute to reconfigure the machine"
+
+sleep 60
+
+echo "Reconfiguring"
+
+/usr/sbin/one-contextd reload
+
+) >> /tmp/context.log 2>&1
+

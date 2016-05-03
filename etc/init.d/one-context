@@ -1,0 +1,21 @@
+#!/sbin/openrc-run
+
+depend() {
+	need localmount
+	before networking
+}
+
+start() {
+	local ret=1
+	ebegin "Starting OpenNebula contextualization"
+	eindent
+	/usr/sbin/one-contextd
+	ret=$?
+	eoutdent
+	return $ret
+}
+
+stop() {
+	return 0
+}
+
