@@ -1,6 +1,11 @@
 apk update
 apk add open-vm-tools
 apk add quagga
+
+apk add sfdisk
+apk add e2fsprogs-extra
+apk add util-linux
+
 apk cache clean
 
 rc-update add keepalived boot
