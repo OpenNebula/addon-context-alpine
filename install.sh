@@ -2,6 +2,7 @@ apk update
 apk add open-vm-tools
 apk add quagga
 
+apk add udev
 apk add sfdisk
 apk add e2fsprogs-extra
 apk add util-linux
