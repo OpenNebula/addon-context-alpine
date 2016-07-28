@@ -12,6 +12,7 @@ vm_tools()
 {
   apk add rsync
   apk add udev
+  apk add iptables
   apk add open-vm-tools
   apk add sfdisk
   apk add e2fsprogs-extra
