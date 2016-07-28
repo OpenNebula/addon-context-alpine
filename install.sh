@@ -26,8 +26,8 @@ vm_tools()
 
 deploy_files()
 {
-  rsync -ar etc/* /
-  rsync -ar usr/* /
+  rsync -ar etc /
+  rsync -ar usr /
 }
 
 
