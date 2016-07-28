@@ -11,6 +11,7 @@ vrouter_addons()
 vm_tools()
 {
   apk add rsync
+  apk add udev
   apk add open-vm-tools
   apk add sfdisk
   apk add e2fsprogs-extra
