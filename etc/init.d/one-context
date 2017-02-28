@@ -2,7 +2,7 @@
 
 depend() {
 	need localmount
-	before networking
+	before networking iptables ip6tables
 }
 
 start() {
