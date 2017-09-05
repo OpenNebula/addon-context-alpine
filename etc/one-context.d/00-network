@@ -118,6 +118,10 @@ EOT
 
     if [ -n "$GATEWAY" ]; then
         echo "  gateway $GATEWAY"
+
+        if [ -n "$METRIC" ]; then
+            echo "  metric $METRIC"
+        fi
     fi
 
     echo ""
@@ -136,6 +140,10 @@ EOT
 
     if [ -n "$GATEWAY6" ]; then
         echo "  gateway $GATEWAY6"
+
+        if [ -n "$METRIC" ]; then
+            echo "  metric $METRIC"
+        fi
     fi
 
     echo ""
@@ -182,6 +190,7 @@ EOT
         MASK=$(get_mask)
         MTU=$(get_mtu)
         GATEWAY=$(get_gateway)
+        METRIC=$(get_iface_var "METRIC")
 
         IPV6=$(get_iface_var "IPV6")
         [[ -z $IPV6 ]] && IPV6=$(get_iface_var "IP6")
