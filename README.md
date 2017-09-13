@@ -1,5 +1,12 @@
 # OpenNebula context for Alpine Linux
 
+This repository is obsolete. Contextualization scripts for the
+Alpine Linux are now part of the OpenNebula
+[Linux VM Contextualization](https://github.com/OpenNebula/addon-context-linux)
+repository.
+
+---
+
 These are the context scripts for Alpine Linux.
 They are not yet available in a premade package but work in this form.
 
